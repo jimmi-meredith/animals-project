@@ -9,13 +9,13 @@ module.exports = {
 
 function showAllAnimals () {
   // Selecting all of the items in the animals table in the database
-  db('animals')
+  return db('animals')
   // returns array of all table items
     .select()
 }
 
 function showAnimalById (id) {
-  db('animals')
+  return db('animals')
     // Selecting all of the items in the animals table in the database
     .select()
     // where the id column matches the id
